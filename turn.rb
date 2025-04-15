@@ -18,16 +18,10 @@ class Turn
     player_input = current_question.ask_question
     if player_input == current_question.answer
       puts "#{current_player.name}: YES! You are correct."
-      display_scores
     else
       puts "#{current_player.name}: Seriously? No!"
       current_player.lose_life
-      display_scores
     end
-  end
-
-  def display_scores
-    puts "P1: #{player1.lives}/3 vs P2: #{player2.lives}/3"
   end
 
 end
