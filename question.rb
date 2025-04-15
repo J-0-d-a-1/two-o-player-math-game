@@ -9,7 +9,7 @@ class Question
   end
 
   def ask_question
-    puts "What is #{number1} + #{number2}?"
+    print "> "
     player_input = gets.chomp.to_i
     if player_input > 0
       return player_input
